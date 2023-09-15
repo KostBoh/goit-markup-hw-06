@@ -4,10 +4,40 @@
   box-sizing: inherit;
 }
 
+
+/* Base styles for mobile devices */
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 396px;
+  /* min-width: 428px; */
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+
+  /* width: 1158px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin: 0 auto; */
+}
+
+/* Styles for Tablet devices */
+
+@media only screen and (min-width: 768px) {   
+    .container {
+      max-width: 768px;
+    
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* base styles */
