@@ -118,6 +118,12 @@ button {
   padding-bottom: 120px;
 }
 
+@media only screen and (max-width: 1157px) {
+  .portfolio  {
+    display: none;
+  }
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -196,7 +202,8 @@ button {
 }
 
 .header-container {
-  width: 1158px;
+  /* max-width: 1158px; */
+  /* max-width: 100%; */
   padding: 0 15px;
   margin: 0 auto;
   display: flex;
@@ -330,7 +337,7 @@ button {
 
 .hero-container {
   /* border-image: no-repeat; */
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
 
 .hero-title {
