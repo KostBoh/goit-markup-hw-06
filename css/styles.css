@@ -8,19 +8,17 @@
 .container {
   min-width: 320px;
   max-width: 428px;
-  /* min-width: 428px; */
+  
   padding-left: 16px;
   padding-right: 16px;
 
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 
-  /* width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto; */
+  
 }
 
 /* Styles for Tablet devices */
@@ -428,23 +426,19 @@ button {
 
 .hero {
   /* background-color: var(--main-bg-cl); */
-
-  height: 600px;
+min-width: 320px;
+  height: 432px;
   flex-shrink: 0;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  /*  */
-  /*  */
-  /*  */
+  padding-top: 112px;
+  padding-bottom: 112px;
+  
   margin: 0 auto;
-  /*  */
-  /*  */
-  /*  */
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--main-bg-cl);
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -462,21 +456,54 @@ button {
       url(../images/hero-bg@2x.jpg);
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    height: 600px;
+    padding-top: 188px;
+      padding-bottom: 188px;
+  }
+}
+
 .hero-container {
   /* border-image: no-repeat; */
   /* max-width: 1440px; */
 }
 
 .hero-title {
-  margin: 0 auto;
-  max-width: 496px;
   color: var(--light-cl);
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 48px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+
+  }
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;  
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }
 
 .button-accent {
@@ -1167,6 +1194,7 @@ input[type='checkbox']:checked
   padding-bottom: 96px;
   padding-top: 96px;
   max-width: 1440px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -1211,12 +1239,10 @@ input[type='checkbox']:checked
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  
-  
+
   width: 115px;
   display: inline-block;
   margin-bottom: 16px;
-
 }
 
 .footer-slogan {
@@ -1247,7 +1273,6 @@ input[type='checkbox']:checked
 .footer-socials-list {
   display: flex;
   gap: 16px;
-  
 }
 
 @media only screen and (min-width: 1158px) {
@@ -1255,7 +1280,6 @@ input[type='checkbox']:checked
     margin-right: 80px;
   }
 }
-
 
 .footer-socials-subject {
   color: #fff;
@@ -1495,6 +1519,8 @@ input[type='checkbox']:checked
 }
 
 .mobile-adress-tel {
+  display: inline-block;
+  width: 353px;
   color: #4d5ae5;
   font-size: 36px;
   font-weight: 700;
