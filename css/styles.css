@@ -1035,22 +1035,37 @@ input[type='checkbox']:checked
 /* Client section */
 
 .client {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .client {
+    padding: 120px 0;
+  }
 }
 
 .client-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
+  align-items: center;
+  justify-content: center;
+  }
+
+@media only screen and (min-width: 768px) {
+  .client-list {
+    gap: 72px 24px;
+  }
 }
 
-.client-link {
-  /* width: 100%;
-  height: 100%; */
 
+
+
+.client-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
+  width: 190px;
   height: 88px;
 
   border: 1px solid var(--link-cl);
@@ -1060,13 +1075,12 @@ input[type='checkbox']:checked
   color: var(--link-cl);
 }
 
-/* dell style */
-/* .client-thumb {}
-.client-link:hover,
-.client-link:focus {
-  border-color: #404bbf;
-  color: #404bbf;
-} */
+@media only screen and (min-width: 768px) {
+  .client-link {
+    width: 168px;
+  }
+}
+
 
 .client-icon {
   /* flex-shrink: 0; */
