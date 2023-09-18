@@ -1455,6 +1455,13 @@ input[type='checkbox']:checked
   /* outline: transparent; */
 }
 
+@media only screen and (max-width: 427px) {
+  .footer-form-input {
+    width: 290px;
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   .footer-form-input {
     width: 264px;
@@ -1584,6 +1591,7 @@ input[type='checkbox']:checked
 }
 
 .mobile-address-item {
+  display: inline-block;
 }
 .mobile-address-item:not(:last-child) {
   margin-bottom: 40px;
@@ -1600,15 +1608,22 @@ input[type='checkbox']:checked
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 427px) {
+  .mobile-adress-tel {
+font-size: 30px;
+  }
+  .mobile-social {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
 .mobile-adress-email {
   color: #434455;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-
-.mobile-address-link {
 }
 
 .mobile-social {
