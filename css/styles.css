@@ -638,7 +638,7 @@ font-size: 20px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 408px;
+  width: calc(100% - 30px);
   min-height: 584px;
   padding: 72px 24px 24px 24px;
   border-radius: 4px;
@@ -1286,6 +1286,7 @@ input[type='checkbox']:checked
 
 @media only screen and (min-width: 1158px) {
   .footer-container {
+    width: 1158рх;
     align-items: baseline;
     justify-content: space-between;
   }
@@ -1610,12 +1611,9 @@ input[type='checkbox']:checked
 
 @media only screen and (max-width: 427px) {
   .mobile-adress-tel {
-font-size: 30px;
+font-size: 24px;
   }
-  .mobile-social {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+     
 }
 
 .mobile-adress-email {
@@ -1629,7 +1627,7 @@ font-size: 30px;
 .mobile-social {
   display: inline-flex;
   align-items: flex-start;
-  gap: 56px;
+  gap: 16px;
 }
 
 .social-icons-list {
